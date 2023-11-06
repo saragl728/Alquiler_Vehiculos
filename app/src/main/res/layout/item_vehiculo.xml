@@ -30,6 +30,7 @@
     <TextView
         android:id="@+id/numeroPlazas"
         android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Número de plazas"
@@ -39,6 +40,7 @@
     <TextView
         android:id="@+id/Volumen"
         android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Volumen Vehículo"
@@ -49,6 +51,7 @@
         android:id="@+id/botonAlquilar"
         android:text="Alquilar Vehículo"
         android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/Volumen"
