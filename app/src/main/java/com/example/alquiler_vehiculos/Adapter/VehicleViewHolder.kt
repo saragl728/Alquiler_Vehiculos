@@ -5,7 +5,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.alquiler_vehiculos.Vehiculos
 import com.example.alquiler_vehiculos.databinding.ItemVehiculoBinding
-import
 
 class VehicleViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 val binding = ItemVehiculoBinding.bind(view)
