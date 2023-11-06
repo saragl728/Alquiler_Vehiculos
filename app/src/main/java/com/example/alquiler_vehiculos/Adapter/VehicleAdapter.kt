@@ -7,7 +7,7 @@ import com.example.alquiler_vehiculos.ListaVehiculos.Companion.listaDeVehiculos
 import com.example.alquiler_vehiculos.Vehiculos
 import com.example.alquiler_vehiculos.R
 
-class VehicleAdapter : RecyclerView.Adapter<VehicleViewHolder>() {
+class VehicleAdapter(val listaVehiculos: List<Vehiculos>) : RecyclerView.Adapter<VehicleViewHolder>() {
 
     //implemento métodos abstractos
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): VehicleViewHolder {
