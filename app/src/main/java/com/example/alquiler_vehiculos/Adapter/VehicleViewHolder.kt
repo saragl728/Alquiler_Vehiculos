@@ -1,5 +1,7 @@
 package com.example.alquiler_vehiculos.Adapter
 
+import android.app.AlertDialog
+import android.app.Dialog
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
@@ -14,6 +16,7 @@ val binding = ItemVehiculoBinding.bind(view)
         binding.Volumen.text = vehicleModel.capacidad
         binding.numeroPlazas.text = vehicleModel.numeroPlazas
         Glide.with(binding.fotoVehiculo.context).load(vehicleModel.urlVehiculo).into(binding.fotoVehiculo)
+
     }
 
 }
