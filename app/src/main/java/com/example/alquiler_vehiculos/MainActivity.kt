@@ -1,8 +1,10 @@
 package com.example.alquiler_vehiculos
 
+import android.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.alquiler_vehiculos.Adapter.VehicleAdapter
 import com.example.alquiler_vehiculos.databinding.ActivityMainBinding
@@ -25,5 +27,16 @@ class MainActivity : AppCompatActivity() {
         }
 
         //hacer click en guardar
+        binding.botonGuardar.setOnClickListener {
+            var aviso = AlertDialog.Builder(this)
+            aviso.setTitle("Confirmación")
+            aviso.setMessage("¿Guardar datos?")
+                .setPositiveButton(android.R.string.ok, {
+                    dialog, which -> Toast.makeText(this, "Datos guardados", Toast.LENGTH_LONG).show()
+                })
+                .setNegativeButton(android.R.string.cancel,
+                    {dialog, which -> Toast.makeText(this, "No se han guardado los datos", Toast.LENGTH_LONG).show()
+        })
+        }
     }
 }
